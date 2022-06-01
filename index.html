@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    function getPaging(str) {
+      console.log("click");
+      $("#loading-content").load("./class/" + str + ".html");
+    }
+  </script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">arWai Homebrew</a>
+      </div>
+      <ul id="top-navbar" class="nav navbar-nav">
+        <li onclick="getPaging('home')""><a href=" #">Home</a></li>
+        <li onclick="getPaging('gunslinger')"><a href="#">戰士 - 槍手</a></li>
+        <li onclick="getPaging('blood_hunter')"><a href="#">血獵者</a></li>
+        <li class="nav-item"><a href="#">Page 3</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div id="loading-content">
+
+    </div>
+  </div>
+
+</body>
+
+</html>
