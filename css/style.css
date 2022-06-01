@@ -201,9 +201,9 @@ mark .md-meta { color: rgb(0, 0, 0); }
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --head: 'Crimson Text', "思源宋體","Noto Serif Traditional Chinese", sans-serif;
-  --body: 'Alegreya', "思源宋體","Noto Serif Traditional Chinese", sans-serif;
-  --mono: 'Source Code Pro',"思源宋體","Noto Serif Traditional Chinese", sans-serif;
+  --head: 'Crimson Text', "Noto Serif TC", sans-serif;
+  --body: 'Alegreya', "Noto Serif TC", sans-serif;
+  --mono: 'Source Code Pro',"Noto Serif TC", sans-serif;
   font-family: var(--body);
   font-size: 12pt;
 
@@ -506,5 +506,5 @@ body {
   font-family: Courier, Microsoft JhengHei;
 }
 body {
-  font-family: "Alegreya","思源宋體","Noto Serif Traditional Chinese", sans-serif;
+  font-family: "Alegreya","Noto Serif TC", sans-serif;
 }
