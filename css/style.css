@@ -222,7 +222,7 @@ content, .typora-export-content {
   right: 0;
   bottom: 0;
   overflow-y: scroll;
-  background-image: url("../image/torillic-bg.jpg");
+  background-image: url("file:///C://Users//Wai//AppData//Roaming//Typora/themes/torillic/torillic-bg.jpg");
   background-size: cover;
   background-position: center;
   z-index: -2;
@@ -231,6 +231,7 @@ content, .typora-export-content {
   top: 0;
 }
 content:after, .typora-export-content:after {
+  content: "Background: Dmitry Demidov via Pexels [#3843969]";
   position: fixed;
   bottom: 1cm;
   left: 0;
