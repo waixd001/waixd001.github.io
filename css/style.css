@@ -222,7 +222,7 @@ content, .typora-export-content {
   right: 0;
   bottom: 0;
   overflow-y: scroll;
-  background-image: url("./image/torillic-bg.jpg");
+  background-image: url("../image/torillic-bg.jpg");
   background-size: cover;
   background-position: center;
   z-index: -2;
