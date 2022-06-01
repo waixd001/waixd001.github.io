@@ -201,9 +201,9 @@ mark .md-meta { color: rgb(0, 0, 0); }
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --head: 'Crimson Text', "思源宋體", sans-serif;
-  --body: 'Alegreya', "思源宋體", sans-serif;
-  --mono: 'Source Code Pro',"思源宋體", sans-serif;
+  --head: 'Crimson Text', "思源宋體","Noto Serif Traditional Chinese", sans-serif;
+  --body: 'Alegreya', "思源宋體","Noto Serif Traditional Chinese", sans-serif;
+  --mono: 'Source Code Pro',"思源宋體","Noto Serif Traditional Chinese", sans-serif;
   font-family: var(--body);
   font-size: 12pt;
 
@@ -222,7 +222,7 @@ content, .typora-export-content {
   right: 0;
   bottom: 0;
   overflow-y: scroll;
-  background-image: url("file:///C://Users//Wai//AppData//Roaming//Typora/themes/torillic/torillic-bg.jpg");
+  background-image: url("./image/torillic-bg.jpg");
   background-size: cover;
   background-position: center;
   z-index: -2;
@@ -231,7 +231,6 @@ content, .typora-export-content {
   top: 0;
 }
 content:after, .typora-export-content:after {
-  content: "Background: Dmitry Demidov via Pexels [#3843969]";
   position: fixed;
   bottom: 1cm;
   left: 0;
@@ -507,5 +506,5 @@ body {
   font-family: Courier, Microsoft JhengHei;
 }
 body {
-  font-family: "Alegreya","思源宋體", sans-serif;
+  font-family: "Alegreya","思源宋體","Noto Serif Traditional Chinese", sans-serif;
 }
