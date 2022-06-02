@@ -19,7 +19,7 @@
     href='https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'
     rel='stylesheet' type='text/css' />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/0b88acc221.js" crossorigin="anonymous"></script>
   <style>
     html {
       /* height of sticky header */
@@ -30,6 +30,13 @@
       background-image: url("../image/torillic-bg.jpg");
       background-size: cover;
       background-position: center;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      display: none;
     }
 
     ::-webkit-scrollbar {
@@ -55,6 +62,24 @@
       console.log("click");
       $("#loading-content").load("./pages/" + str + ".html");
     }
+
+    // 回到頁頂按鈕
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('#back-to-top').fadeIn();
+        } else {
+          $('#back-to-top').fadeOut();
+        }
+      });
+      // scroll body to 0px on click
+      $('#back-to-top').click(function () {
+        $('html').animate({
+          scrollTop: 0
+        }, 400);
+        return false;
+      });
+    });
   </script>
 </head>
 
@@ -161,6 +186,9 @@
     </div>
   </div>
 
+  <!-- 回到頁頂 -->
+  <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i
+      class="fas fa-chevron-up"></i></a>
 </body>
 
 </html>
