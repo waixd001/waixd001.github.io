@@ -217,14 +217,16 @@ mark .md-meta { color: rgb(0, 0, 0); }
 /** Background **/
 
 content, .typora-export-content {
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   right: 0;
   bottom: 0;
-  overflow-y: scroll;
+  overflow-y: hidden;
+  /*
   background-image: url("../image/torillic-bg.jpg");
   background-size: cover;
   background-position: center;
+  */
   z-index: -2;
 }
 .typora-export-content {

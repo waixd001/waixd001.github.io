@@ -26,6 +26,12 @@
       scroll-padding-top: 70px;
     }
 
+    .container {
+      background-image: url("../image/torillic-bg.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
     ::-webkit-scrollbar {
       width: 12px;
     }
@@ -44,6 +50,7 @@
     $(document).ready(function () {
       $("#loading-content").load("./pages/home.html");
     });
+
     function getPaging(str) {
       console.log("click");
       $("#loading-content").load("./pages/" + str + ".html");
@@ -52,11 +59,10 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <nav class="navbar sticky-top navbar-expand-sm bg-dark navbar-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">arWai Homebrew</a>
-      <button onclick="getPaging('home')" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#collapsibleNavbar">
+      <a onclick="getPaging('home')" class="navbar-brand" href="#">arWai Homebrew</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
